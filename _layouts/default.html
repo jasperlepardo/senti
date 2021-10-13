@@ -1,0 +1,9 @@
+---
+layout: base
+layout-type: #container | container-fluid
+custom-stylesheet: 
+---
+
+<main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
+  {{ content }}
+</main>
