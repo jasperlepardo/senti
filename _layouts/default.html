@@ -13,6 +13,38 @@ custom-stylesheet:
   </div>
 </nav>
 
+{% if page.header %}
+  <div class="bg-primary bs-3 mb-4 pb-3 pt-5 text-light">
+    <div class="container">
+      <h1>Welcome back, Jasper!</h1>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.subheader %}
+  <div class="bg-light py-3 mb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="btn btn-outline-secondary btn-lg" href=""><i class="uil uil-angle-left-b"></i></a>
+        </div>
+        <div class="col">
+          <h6>{{ page.title }}</h6>
+        </div>
+        <div class="col-auto">
+          {% if page.secondary-button %}
+            <a class="btn btn-link" href="">{{ page.secondary-button }}</a>
+          {% endif %}
+          {% if page.primary-button %}
+            <a class="btn btn-primary" href="">{{ page.primary-button }}</a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endif %}
+
 <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: 'container'}}{%endif%}">
   {{ content }}
 </main>
