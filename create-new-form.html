@@ -4,6 +4,8 @@ layout-type: #container | container-fluid
 custom-stylesheet: 
 transition: fade
 
+navbar: true
+
 subheader: true
 
 title: Crete New Form
@@ -13,184 +15,203 @@ secondary-button: Save as Draft
 
 ---
 
-<div class="card">
-    <div class="card-body">
+<div class="d-grid gap-4">
 
-        <p>Generate Form</p>
-        <div class="row">
-            <div class="col">
-                <label for="">From</label>
-                <input type="date" class="form-control">
+    <div class="card">
+        <div class="card-body">
+
+            <p>Generate Form</p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <label for="">From</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="">To</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="">Trade Name</label>
+                    <select class="form-select" name="" id="">
+                        <option value="">Select Trade Name</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="">Location</label>
+                    <select class="form-select" name="" id="">
+                        <option value="">Select Location</option>
+                    </select>
+                </div>
             </div>
-            <div class="col">
-                <label for="">To</label>
-                <input type="date" class="form-control">
-            </div>
-            <div class="col">
-                <label for="">Trade Name</label>
-                <select class="form-select" name="" id="">
-                    <option value="">Select Trade Name</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="">Location</label>
-                <select class="form-select" name="" id="">
-                    <option value="">Select Location</option>
-                </select>
-            </div>
+            <hr>
+            <a class="btn btn-primary" href="">Generate Form</a>
         </div>
-
-        <a class="btn btn-primary" href="">Generate Form</a>
     </div>
-</div>
 
-<div class="card">
-    <div class="card-body">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-4">
 
-        <p>For the period</p>
-        <div class="row">
-            <div class="col">
-                <label for="">From</label>
-                <p class="form-control-plaintext">07/01/2021</p>
-            </div>
-            <div class="col">
-                <label for="">To</label>
-                <p class="form-control-plaintext">07/30/2021</p>
+                <div>
+                    <p>For the period</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">From</label>
+                            <p class="form-control-plaintext">07/01/2021</p>
+                        </div>
+                        <div class="col">
+                            <label for="">To</label>
+                            <p class="form-control-plaintext">07/30/2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Part I: Payee Information</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Taxpayer Identification Number (TIN)</label>
+                            <p class="form-control-plaintext">005-646-159-00001</p>
+                        </div>
+                        <div class="col">
+                            <label for="">Payee’s Name</label>
+                            <p class="form-control-plaintext">CONSOLIDATED PRIME DEV. CORP.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Registered Address</label>
+                            <p class="form-control-plaintext">SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</p>
+                        </div>
+                        <div class="col">
+                            <label for="">ZIP Code</label>
+                            <p class="form-control-plaintext">4114</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Part II: Payor Information</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Taxpayer Identification Number (TIN)</label>
+                            <p class="form-control-plaintext">4114</p>
+                        </div>
+                        <div class="col">
+                            <label for="">Payor’s Name</label>
+                            <p class="form-control-plaintext">SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Registered Address</label>
+                            <p class="form-control-plaintext">2214 Tolentino, St., Pasay City Philippines</p>
+                        </div>
+                        <div class="col">
+                            <label for="">ZIP Code</label>
+                            <p class="form-control-plaintext">1300</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Part III: Details of Monthly Income Payments and Taxes Withheld</p>
+                    <hr>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="col-3 text-center" rowspan="2">ATC</th>
+                                <th class="col-7 text-center" colspan="4">Amount of Income Payments</th>
+                                <th class="col-2 text-center" rowspan="2">Tax Withheld for the Quarter</th>
+                            </tr>
+                            <tr>
+                                <th class="col-auto text-center">1st Month of the Quarter</th>
+                                <th class="col-auto text-center">2nd Month of the Quarter</th>
+                                <th class="col-auto text-center">3rd Month of the Quarter</th>
+                                <th class="col-auto text-center">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select class="form-select" name="" id="">
+                                        <option value="">WC100</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="14357.00" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="7005.00" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="12976.20" >
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">34,338.20</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">1,716.91</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" name="" id="">
+                                        <option value="">WC160</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="33368.50" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="18767.50" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="34711.00" >
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">86,847.00</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">1,736.94</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <a class="btn btn-link" href="">Add Item</a>
+                                    <a class="btn btn-outline-primary" href="">Attach Breakdown</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="bg-light">
+                                <td>
+                                    <p class="form-control-plaintext"><b>Total</b></p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">47,725.50</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">25,772.50</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">47,687.2</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">12,1185.20</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-plaintext">3,453.85</p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </div>
-
-        <p>Part I: Payee Information</p>
-        <div class="row">
-            <div class="col">
-                <label for="">Taxpayer Identification Number (TIN)</label>
-                <p class="form-control-plaintext">005-646-159-00001</p>
-            </div>
-            <div class="col">
-                <label for="">Payee’s Name</label>
-                <p class="form-control-plaintext">CONSOLIDATED PRIME DEV. CORP.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <label for="">Registered Address</label>
-                <p class="form-control-plaintext">SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</p>
-            </div>
-            <div class="col">
-                <label for="">ZIP Code</label>
-                <p class="form-control-plaintext">4114</p>
-            </div>
-        </div>
-
-        <p>Part II: Payor Information</p>
-        <div class="row">
-            <div class="col">
-                <label for="">Taxpayer Identification Number (TIN)</label>
-                <p class="form-control-plaintext">4114</p>
-            </div>
-            <div class="col">
-                <label for="">Payor’s Name</label>
-                <p class="form-control-plaintext">SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <label for="">Registered Address</label>
-                <p class="form-control-plaintext">2214 Tolentino, St., Pasay City Philippines</p>
-            </div>
-            <div class="col">
-                <label for="">ZIP Code</label>
-                <p class="form-control-plaintext">1300</p>
-            </div>
-        </div>
-
-        <p>Part III: Details of Monthly Income Payments and Taxes Withheld</p>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th class="col-3 text-center" rowspan="2">ATC</th>
-                    <th class="col-7 text-center" colspan="4">Amount of Income Payments</th>
-                    <th class="col-2 text-center" rowspan="2">Tax Withheld for the Quarter</th>
-                </tr>
-                <tr>
-                    <th class="col-auto text-center">1st Month of the Quarter</th>
-                    <th class="col-auto text-center">2nd Month of the Quarter</th>
-                    <th class="col-auto text-center">3rd Month of the Quarter</th>
-                    <th class="col-auto text-center">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <select class="form-select" name="" id="">
-                            <option value="">WC100</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="14357.00" >
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="7005.00" >
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="12976.20" >
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">34,338.20</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">1,716.91</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <select class="form-select" name="" id="">
-                            <option value="">WC160</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="33368.50" >
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="18767.50" >
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="" aria-describedby="" value="34711.00" >
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">86,847.00</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">1,736.94</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6">
-                        <a href="">Add Item</a>
-                        <a href="">Attach Breakdown</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="form-control-plaintext">Total</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">47,725.50</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">25,772.50</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">47,687.2</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">12,1185.20</p>
-                    </td>
-                    <td>
-                        <p class="form-control-plaintext">3,453.85</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
     </div>
 </div>

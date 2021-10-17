@@ -1,11 +1,16 @@
 body {
     background-color: #ECF1FA;
+    padding-bottom: 80px;
 }
 
 label {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.table {
+    margin-bottom: 0;
 }
 
 th {
