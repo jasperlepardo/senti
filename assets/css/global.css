@@ -28,3 +28,23 @@ th a:hover {
     text-decoration: underline;
     color: inherit
 }
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* 
+#income-payments tr td:nth-child(1) {
+    width: 368px;
+}
+
+#income-payments tr td:nth-child(2),
+#income-payments tr td:nth-child(3),
+#income-payments tr td:nth-child(4),
+#income-payments tr td:nth-child(5) {
+    width: 15%;
+} */

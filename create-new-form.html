@@ -23,28 +23,27 @@ secondary-button: Save as Draft
             <p>Generate Form</p>
             <hr>
             <div class="row">
-                <div class="col">
+                <div class="col mb-3">
                     <label for="">From</label>
                     <input type="date" class="form-control">
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <label for="">To</label>
                     <input type="date" class="form-control">
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <label for="">Trade Name</label>
                     <select class="form-select" name="" id="">
                         <option value="">Select Trade Name</option>
                     </select>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <label for="">Location</label>
                     <select class="form-select" name="" id="">
                         <option value="">Select Location</option>
                     </select>
                 </div>
             </div>
-            <hr>
             <a class="btn btn-primary" href="">Generate Form</a>
         </div>
     </div>
@@ -57,11 +56,11 @@ secondary-button: Save as Draft
                     <p>For the period</p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">From</label>
                             <p class="form-control-plaintext">07/01/2021</p>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">To</label>
                             <p class="form-control-plaintext">07/30/2021</p>
                         </div>
@@ -72,21 +71,21 @@ secondary-button: Save as Draft
                     <p>Part I: Payee Information</p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Taxpayer Identification Number (TIN)</label>
                             <p class="form-control-plaintext">005-646-159-00001</p>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Payee’s Name</label>
                             <p class="form-control-plaintext">CONSOLIDATED PRIME DEV. CORP.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Registered Address</label>
                             <p class="form-control-plaintext">SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</p>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">ZIP Code</label>
                             <p class="form-control-plaintext">4114</p>
                         </div>
@@ -97,21 +96,21 @@ secondary-button: Save as Draft
                     <p>Part II: Payor Information</p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Taxpayer Identification Number (TIN)</label>
                             <p class="form-control-plaintext">4114</p>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Payor’s Name</label>
                             <p class="form-control-plaintext">SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">Registered Address</label>
                             <p class="form-control-plaintext">2214 Tolentino, St., Pasay City Philippines</p>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label for="">ZIP Code</label>
                             <p class="form-control-plaintext">1300</p>
                         </div>
@@ -121,12 +120,13 @@ secondary-button: Save as Draft
                 <div>
                     <p>Part III: Details of Monthly Income Payments and Taxes Withheld</p>
                     <hr>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" id="income-payments">
                         <thead>
                             <tr>
                                 <th class="col-3 text-center" rowspan="2">ATC</th>
-                                <th class="col-7 text-center" colspan="4">Amount of Income Payments</th>
-                                <th class="col-2 text-center" rowspan="2">Tax Withheld for the Quarter</th>
+                                <th class="col-6 text-center" colspan="4">Amount of Income Payments</th>
+                                <th class="col-3 text-center" rowspan="2">Tax Withheld for the Quarter</th>
+                                <th rowspan="2"></th>
                             </tr>
                             <tr>
                                 <th class="col-auto text-center">1st Month of the Quarter</th>
@@ -157,6 +157,9 @@ secondary-button: Save as Draft
                                 <td>
                                     <p class="form-control-plaintext">1,716.91</p>
                                 </td>
+                                <td>
+                                    <a class="btn btn-link link-danger" href=""><i class="uil uil-minus-circle"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -179,15 +182,17 @@ secondary-button: Save as Draft
                                 <td>
                                     <p class="form-control-plaintext">1,736.94</p>
                                 </td>
+                                <td>
+                                    <a class="btn btn-link link-danger" href=""><i class="uil uil-minus-circle"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="6">
-                                    <a class="btn btn-link" href="">Add Item</a>
+                                    <a class="btn btn-link" href=""><i class="uil uil-plus"></i>Add Item</a>
                                     <a class="btn btn-outline-primary" href="">Attach Breakdown</a>
                                 </td>
+                                <td></td>
                             </tr>
-                        </tbody>
-                        <tfoot>
                             <tr class="bg-light">
                                 <td>
                                     <p class="form-control-plaintext"><b>Total</b></p>
@@ -207,9 +212,94 @@ secondary-button: Save as Draft
                                 <td>
                                     <p class="form-control-plaintext">3,453.85</p>
                                 </td>
+                                <td></td>
                             </tr>
-                        </tfoot>
+                        </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#discard-form">
+    Discard Form
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="discard-form" tabindex="-1" aria-labelledby="discard-form-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-light">
+                <div class="d-grid gap-4 w-100">
+                    <div class="text-end">
+                        <button type="button" class="btn btn-link link-light ml-0" data-bs-dismiss="modal" aria-label="Close"><i class="uil uil-times"></i></button>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="modal-title" id="exampleModalLabel">Discard Changes?</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <p>Do you want to save your changes before you exit?</p>
+                    <a class="btn btn-link link-dark" href="">Save as Draft</a>
+                    <a class="btn btn-danger" href="">Discard Changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#save-draft-form">
+    Save as Draft
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="save-draft-form" tabindex="-1" aria-labelledby="save-draft-form-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-light">
+                <div class="d-grid gap-4 w-100">
+                    <div class="text-end">
+                        <button type="button" class="btn btn-link link-light ml-0" data-bs-dismiss="modal" aria-label="Close"><i class="uil uil-times"></i></button>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="modal-title" id="save-draft-form-label">Save &amp; Close</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <p>Do you want save the changes?</p>
+                    <a class="btn btn-link link-dark" href="">Cancel</a>
+                    <a class="btn btn-success" href="">Save as Draft</a>
                 </div>
             </div>
         </div>
