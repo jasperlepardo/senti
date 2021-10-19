@@ -12,24 +12,6 @@
 
     {% include open-graph.html %}
 
-    {% if site.google-font %}
-      <!-- Google Font -->
-      <link href="{{ site.google-font }}" rel="stylesheet">
-    {% endif %}
-
-    {% if site.fontawesome %}
-      <!-- FontAwesome 5 -->
-      <script src="{{ site.fontawesome }}" crossorigin="anonymous"></script>
-    {% endif %}
-
-    {% if site.material-icon %}
-      <!-- Google Material Icon -->
-      <script src="{{ site.material-icon }}" crossorigin="anonymous"></script>
-    {% endif %}
-
-    <!-- Unicons Thin Line -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
     <!-- STYLESHEET -->
 
     <!-- Main -->
@@ -47,6 +29,24 @@
       <!-- Page Specific CSS -->
       <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.custom-stylesheet }}.css">
     {% endif %}
+
+    {% if site.google-font %}
+      <!-- Google Font -->
+      <link href="{{ site.google-font }}" rel="stylesheet">
+    {% endif %}
+
+    {% if site.fontawesome %}
+      <!-- FontAwesome 5 -->
+      <script src="{{ site.fontawesome }}" crossorigin="anonymous"></script>
+    {% endif %}
+
+    {% if site.material-icon %}
+      <!-- Google Material Icon -->
+      <script src="{{ site.material-icon }}" crossorigin="anonymous"></script>
+    {% endif %}
+
+    <!-- Unicons Thin Line -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- PLUGINS -->
 
