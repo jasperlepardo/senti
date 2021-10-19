@@ -1,6 +1,6 @@
 body {
     background-color: #ECF1FA;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 label {
@@ -48,3 +48,18 @@ td {
 #income-payments tr td:nth-child(5) {
     width: 15%;
 } */
+
+
+
+#uploader {
+    background-color: #ECF1FA;
+    padding: 40px;
+    border: 1px dashed #21459D;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 500
+}
