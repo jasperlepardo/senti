@@ -367,9 +367,21 @@ caption {
 // 3. Fix alignment for Safari
 
 th {
+  font-size: $font-size-xs;
   font-weight: $table-th-font-weight; // 1
+  text-transform: uppercase;
   text-align: inherit; // 2
   text-align: -webkit-match-parent; // 3
+
+  > a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
 
 thead,

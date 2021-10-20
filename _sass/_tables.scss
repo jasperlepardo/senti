@@ -13,7 +13,7 @@
   --#{$variable-prefix}table-hover-bg: #{$table-hover-bg};
 
   width: 100%;
-  margin-bottom: $spacer;
+  // margin-bottom: $spacer;
   color: $table-color;
   vertical-align: $table-cell-vertical-align;
   border-color: $table-border-color;
@@ -32,10 +32,15 @@
 
   > tbody {
     vertical-align: inherit;
+
+    > tr:last-child > td {
+      border-bottom: 0;
+    }
   }
 
   > thead {
     vertical-align: bottom;
+
   }
 
   // Highlight border color between thead, tbody and tfoot.
@@ -43,7 +48,6 @@
   //   border-top: (2 * $table-border-width) solid $table-group-separator-color;
   // }
 }
-
 
 //
 // Change placement of captions with a class
@@ -134,9 +138,9 @@
 // Table variants set the table cell backgrounds, border colors
 // and the colors of the striped, hovered & active tables
 
-@each $color, $value in $table-variants {
-  @include table-variant($color, $value);
-}
+// @each $color, $value in $table-variants {
+//   @include table-variant($color, $value);
+// }
 
 // Responsive tables
 //

@@ -54,3 +54,17 @@
 // Utilities
 @import "utilities/api";
 // scss-docs-end import-stack
+
+
+body {
+    background-color: #ECF1FA;
+    /* padding-bottom: 80px; */
+}
+
+#uploader {
+    background-color: #ECF1FA;
+    padding: 40px;
+    border: 1px dashed #21459D;
+    border-radius: 4px;
+    text-align: center;
+}
