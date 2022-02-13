@@ -26,12 +26,12 @@
 @import "forms";
 @import "buttons";
 @import "transitions";
-// @import "dropdown";
+@import "dropdown";
 // @import "button-group";
 @import "nav";
 @import "navbar";
 @import "card";
-// @import "accordion";
+@import "accordion";
 // @import "breadcrumb";
 // @import "pagination";
 @import "badge";
@@ -55,10 +55,33 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+@font-face {
+    font-family: 'Proxima';
+    src: url(../fonts/proxima/Proxima-Nova-Alt-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url(../fonts/proxima/Proxima-Nova-Alt-Light.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url(../fonts/proxima/Proxima-Nova-Alt-Regular.otf);
+    font-weight: normal;
+}
+
 
 body {
-    background-color: #ECF1FA;
-    /* padding-bottom: 80px; */
+    background-color: #dae6fb;
+    background-image: url(../img/bg@x2.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-family: "Proxima", sans-serif;
+
 }
 
 #uploader {
@@ -68,3 +91,58 @@ body {
     border-radius: 4px;
     text-align: center;
 }
+
+.heading {
+    
+}
+
+
+.dropdown-menu {
+    max-height: 360px;
+}
+
+.table-responsive {
+    max-height: 460px;
+}
+
+.navbar {
+    background-image: url(../img/bg@x2.png);
+}
+
+
+.btn-wide {
+    min-width: 160px;
+}
+
+
+
+
+.badge {
+
+    &.bg-primary {
+        background-color: #A6B4D8;
+        color: #21459D;
+    }
+
+    &.bg-success {
+        background-color: #E6ECC7;
+        color: #8C9F00;
+    }
+    
+    &.bg-warning {
+        background-color: #FFE2B9;
+        color: #DD8100;
+    }
+    
+    &.bg-danger {
+        background-color: #FFADAD;
+        color: #E52525;
+    }
+    
+    &.bg-danger {
+        background-color: #ADB5BD;
+        color: #272B30;
+    }
+    
+}
+

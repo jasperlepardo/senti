@@ -10,7 +10,7 @@ subheader: true
 
 title: Crete New Form
 
-primary-button: Next
+primary-button: Review
 secondary-button: Save as Draft
 
 ---
@@ -20,24 +20,33 @@ secondary-button: Save as Draft
     <div class="card">
         <div class="card-body">
 
-            <p>Generate Form</p>
+            <p><b>Generate Form</b></p>
             <hr>
-            <div class="row mb-3">
-                <div class="col">
-                    <label class="form-label">From</label>
-                    <input type="date" class="form-control">
+            <div class="form-check form-check-inline mb-3">
+                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Single Form</label>
+            </div>
+            <div class="form-check form-check-inline mb-3">
+                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Consolidated Form</label>
+            </div>
+
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label class="form-label">Form Period</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control">
+                        <span class="input-group-text">to</span>
+                        <input type="date" class="form-control">
+                    </div>
                 </div>
-                <div class="col">
-                    <label class="form-label">To</label>
-                    <input type="date" class="form-control">
-                </div>
-                <div class="col">
+                <div class="col mb-3">
                     <label class="form-label">Trade Name</label>
                     <select class="form-select" name="" id="">
                         <option value="">Select Trade Name</option>
                     </select>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <label class="form-label">Location</label>
                     <select class="form-select" name="" id="">
                         <option value="">Select Location</option>
@@ -53,74 +62,74 @@ secondary-button: Save as Draft
             <div class="d-grid gap-4">
 
                 <div>
-                    <p>For the period</p>
+                    <p><b>For the period</b></p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">From</label>
-                            <p>07/01/2021</p>
+                            <input type="date" class="form-control">
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">To</label>
-                            <p>07/30/2021</p>
+                            <input type="date" class="form-control">
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <p>Part I: Payee Information</p>
+                    <p><b>Part I: Payee Information</b></p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">Taxpayer Identification Number (TIN)</label>
-                            <p>005-646-159-00001</p>
+                            <input type="text" class="form-control" value="005-646-159-00001" disabled>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">Payee’s Name</label>
-                            <p>CONSOLIDATED PRIME DEV. CORP.</p>
+                            <input type="text" class="form-control" value="CONSOLIDATED PRIME DEV. CORP." disabled>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">Registered Address</label>
-                            <p>SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</p>
+                            <textarea class="form-control" disabled>SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</textarea>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">ZIP Code</label>
-                            <p>4114</p>
+                            <input type="text" class="form-control" value="4114" disabled>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <p>Part II: Payor Information</p>
+                    <p><b>Part II: Payor Information</b></p>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">Taxpayer Identification Number (TIN)</label>
-                            <p>4114</p>
+                            <input type="text" class="form-control" value="000-844-246-00000" disabled>
                         </div>
                         <div class="col">
                             <label class="form-label">Payor’s Name</label>
-                            <p>SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)</p>
+                            <input type="text" class="form-control" value="SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)" disabled>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">Registered Address</label>
-                            <p>2214 Tolentino, St., Pasay City Philippines</p>
+                            <textarea class="form-control" disabled>2214 Tolentino, St., Pasay City Philippines</textarea>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <label class="form-label">ZIP Code</label>
-                            <p>1300</p>
+                            <input type="text" class="form-control" value="1300" disabled>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <p>Part III: Details of Monthly Income Payments and Taxes Withheld</p>
+                    <p><b>Part III: Details of Monthly Income Payments and Taxes Withheld</b></p>
                     <hr>
-                    <table class="table table-bordered" id="income-payments">
+                    <table class="table table-bordered mb-3" id="income-payments">
                         <thead>
                             <tr>
                                 <th class="text-center" rowspan="2">ATC</th>
@@ -136,6 +145,73 @@ secondary-button: Save as Draft
                             </tr>
                         </thead>
                         <tbody>
+                            <tr class="bg-dark text-light">
+                                <td colspan="7">
+                                    Income Payments Subject to Expanded Withholding Tax
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" name="" id="">
+                                        <option value="">WC100</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="14357.00" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="7005.00" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="12976.20" >
+                                </td>
+                                <td class="text-center">34,338.20</td>
+                                <td class="text-center">1,716.91</td>
+                                <td>
+                                    <a class="btn btn-link link-danger" href=""><i class="uil uil-minus-circle"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" name="" id="">
+                                        <option value="">WC160</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="33368.50" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="18767.50" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="" aria-describedby="" value="34711.00" >
+                                </td>
+                                <td class="text-center">86,847.00</td>
+                                <td class="text-center">1,736.94</td>
+                                <td>
+                                    <a class="btn btn-link link-danger" href=""><i class="uil uil-minus-circle"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <a class="btn btn-link" href=""><i class="uil uil-plus me-2"></i>Add Item</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="bg-light">
+                                <td><b>Total</b></td>
+                                <td class="text-center">47,725.50</td>
+                                <td class="text-center">25,772.50</td>
+                                <td class="text-center">47,687.2</td>
+                                <td class="text-center">12,1185.20</td>
+                                <td class="text-center">3,453.85</td>
+                                <td></td>
+                            </tr>
+                            <tr class="bg-dark text-light">
+                                <td colspan="7">
+                                    Money Payments Subject to Withholding of Business Tax (Government &amp; Private)
+                                </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <select class="form-select" name="" id="">
@@ -195,6 +271,28 @@ secondary-button: Save as Draft
                             </tr>
                         </tbody>
                     </table>
+                    <div class="d-flex justify-content-between">
+                        <div class="align-items-center d-flex gap-3">
+                            <a class="btn btn-outline-primary" href="">Attach Breakdown</a>
+                            <span class="text-success">[Text Success]</span>
+                            <span class="text-danger">[Text Error]</span>
+                        </div>
+                        <a class="btn btn-link" href="">Download Template</a>    
+                    </div>
+
+
+
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    {% if page.secondary-button %}
+                        <a class="btn btn-link btn-lg" href="">{{ page.secondary-button }}</a>
+                    {% endif %}
+                    {% if page.primary-button %}
+                        <a class="btn btn-primary btn-lg" href="">{{ page.primary-button }}</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -264,7 +362,7 @@ secondary-button: Save as Draft
 <div class="modal fade" id="save-draft-form" tabindex="-1" aria-labelledby="save-draft-form-label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header bg-success text-light">
+            <div class="modal-header bg-primary text-light">
                 <div class="d-grid gap-4 w-100">
                     <div class="text-end">
                         <button type="button" class="btn btn-link link-light ml-0" data-bs-dismiss="modal" aria-label="Close"><i class="uil uil-times"></i></button>
@@ -278,7 +376,7 @@ secondary-button: Save as Draft
                 <div class="container text-center">
                     <p>Do you want save the changes?</p>
                     <a class="btn btn-link link-dark" href="">Cancel</a>
-                    <a class="btn btn-success" href="">Save as Draft</a>
+                    <a class="btn btn-primary" href="">Save as Draft</a>
                 </div>
             </div>
         </div>

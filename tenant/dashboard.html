@@ -1,0 +1,553 @@
+---
+layout: default
+layout-type: #container | container-fluid
+custom-stylesheet: 
+transition: fade
+
+navbar: true
+
+header: true
+
+---
+
+<div class="heading pt-4 pb-3">
+    <div class="row">
+        <div class="col">
+            <h1>Welcome!</h1>
+        </diV>
+        <div class="col text-end">
+            <a class="btn btn-primary ml-auto" href="{{ site.baseurl }}/tenant/create-new-form.html">Create New Form</a>
+        </div>
+    </div>
+</div>
+
+<div class="d-grid gap-4 mb-5">
+
+   
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+                    <thead class="bg-white" style="position: sticky;top: 0" >
+                        <tr>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Reference Number</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Trade Name</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-3 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <a href="">Select All</a>
+                                            <a href="">Clear</a>
+                                        </form>
+                                        <div class="overflow-auto" style="max-height: 162px;">
+                                                <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Barbers</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Cafe</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Fix Salon</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Skin Expert</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Faceshop</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Human</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Kashieca</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Miasen</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Pablo</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Patchi</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">PCX</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">St. Marc Cafe</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Location</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-3 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <a href="">Select All</a>
+                                            <a href="">Clear</a>
+                                        </form>
+                                        <div class="overflow-auto" style="max-height: 162px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY MANILA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN JOSE DEL MONTE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY FAIRVIEW</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SAVEMORE MARKET NAGTAHAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BF PARANAQUE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BICUTAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY NORTH EDSA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CENTER PASIG</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY VALENZUELA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SOUTHMALL LAS PINAS</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM AURA PREMIER</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Updated</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="mb-3">
+                                                <input type="date" class="form-control" placeholder="Search">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <a href=""><i class="me-1 uil uil-sort"></i>Withholding Tax</a>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Period</a>
+                                    <div class="dropdown-menu">
+                                        <div class="overflow-auto" style="mex-height: 212px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q1</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q2</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q3</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q4</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Status</a>
+                                    <div class="dropdown-menu">
+                                        <div class="overflow-auto" style="max-height: 272px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Submitted</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Returned</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Cancelled</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Resubmitted</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Disapproved</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Approved</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="overflow-auto">
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Submitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Returned</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Cancelled</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Resubmitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Disapproved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Submitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Returned</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Cancelled</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Resubmitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Disapproved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Submitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Returned</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Cancelled</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Resubmitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Disapproved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col align-self-center">
+                    Records: 1 - 10 / 100
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-link" href=""><i class="uil uil-angle-left-b"></i></a>
+                        Page <input type="text" class="form-control mx-2" style="width: 96px;" id="" placeholder="1"> of 50
+                        <a class="btn btn-link" href=""><i class="uil uil-angle-right-b"></i></a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <select class="form-select mx-2" style="width: 96px;" name="" id="">
+                            <option value="">10</option>
+                        </select>
+                        per page
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="card-title">My Draft (0/5)</h6>
+            <p class="card-text">Draft forms are automatcally deleted quarterly.</p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>Trade Name</a></th>
+                        <th><a href=""><i class="me-1 uil uil-angle-down"></i>Location</a></th>
+                        <th><a href=""><i class="me-1 uil uil-angle-up"></i>Updated</a></th>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>Period</a></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bench</td>
+                        <td>SM Aura Premier</td>
+                        <td>October 3, 2021</td>
+                        <td>Q3 2021</td>
+                        <td>
+                            <a class="btn btn-link" href=""><i class="uil uil-pen me-2"></i>Edit</a>
+                            <a class="btn btn-link link-danger" href=""><i class="uil uil-trash-alt me-2"></i>Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bench</td>
+                        <td>SM Aura Premier</td>
+                        <td>October 3, 2021</td>
+                        <td>Q3 2021</td>
+                        <td>
+                            <a class="btn btn-link" href=""><i class="uil uil-pen me-2"></i>Edit</a>
+                            <a class="btn btn-link link-danger" href=""><i class="uil uil-trash-alt me-2"></i>Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bench</td>
+                        <td>SM Aura Premier</td>
+                        <td>October 3, 2021</td>
+                        <td>Q3 2021</td>
+                        <td>
+                            <a class="btn btn-link" href=""><i class="uil uil-pen me-2"></i>Edit</a>
+                            <a class="btn btn-link link-danger" href=""><i class="uil uil-trash-alt me-2"></i>Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

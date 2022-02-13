@@ -1,0 +1,401 @@
+---
+layout: default
+layout-type: #container | container-fluid
+custom-stylesheet: 
+transition: fade
+
+navbar: true
+
+subheader: true
+
+title: Review Form
+
+primary-button: Preview & Submit
+secondary-button: Save as Draft
+
+---
+
+
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-grid gap-4">
+
+            <div>
+                <p><b>For the period</b></p>
+                <hr>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">From</label>
+                        <input type="date" class="form-control" disabled>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">To</label>
+                        <input type="date" class="form-control" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p><b>Part I: Payee Information</b></p>
+                <hr>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Taxpayer Identification Number (TIN)</label>
+                        <input type="text" class="form-control" value="005-646-159-00001" disabled>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">Payee’s Name</label>
+                        <input type="text" class="form-control" value="CONSOLIDATED PRIME DEV. CORP." disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Registered Address</label>
+                        <textarea class="form-control" disabled>SM CITY DASMARIÑAS, GOVERNOR’S DRIVE BRGY SAMPLOK 1, DASMARIÑAS CAVITE, PH</textarea>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">ZIP Code</label>
+                        <input type="text" class="form-control" value="4114" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>Part II: Payor Information</p>
+                <hr>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Taxpayer Identification Number (TIN)</label>
+                        <input type="text" class="form-control" value="000-844-246-00000" disabled>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Payor’s Name</label>
+                        <input type="text" class="form-control" value="SUYEN CORPORATION (FACESHOP SM DASMARIÑAS)" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Registered Address</label>
+                        <textarea class="form-control" disabled>2214 Tolentino, St., Pasay City Philippines</textarea>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">ZIP Code</label>
+                        <input type="text" class="form-control" value="1300" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>Part III: Details of Monthly Income Payments and Taxes Withheld</p>
+                <hr>
+                <table class="table table-bordered" id="income-payments">
+                    <thead>
+                        <tr>
+                            <th class="text-center" rowspan="2">ATC</th>
+                            <th class="text-center" colspan="4">Amount of Income Payments</th>
+                            <th class="text-center" style="width: 160px;" rowspan="2">Tax Withheld for the Quarter</th>
+                        </tr>
+                        <tr>
+                            <th class="text-center" style="width: 160px;">1st Month of the Quarter</th>
+                            <th class="text-center" style="width: 160px;">2nd Month of the Quarter</th>
+                            <th class="text-center" style="width: 160px;">3rd Month of the Quarter</th>
+                            <th class="text-center" style="width: 160px;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-dark text-light">
+                            <td colspan="6">
+                                Income Payments Subject to Expanded Withholding Tax
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="form-select" name="" id="" disabled>
+                                    <option value="">WC100</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="14357.00" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="7005.00" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="12976.20" disabled>
+                            </td>
+                            <td class="text-center">34,338.20</td>
+                            <td class="text-center">1,716.91</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="form-select" name="" id="" disabled>
+                                    <option value="">WC160</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="33368.50" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="18767.50" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="34711.00" disabled>
+                            </td>
+                            <td class="text-center">86,847.00</td>
+                            <td class="text-center">1,736.94</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td><b>Total</b></td>
+                            <td class="text-center">47,725.50</td>
+                            <td class="text-center">25,772.50</td>
+                            <td class="text-center">47,687.2</td>
+                            <td class="text-center">12,1185.20</td>
+                            <td class="text-center">3,453.85</td>
+                        </tr>
+                        <tr class="bg-dark text-light">
+                            <td colspan="6">
+                                Money Payments Subject to Withholding of Business Tax (Government &amp; Private)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="form-select" name="" id="" disabled>
+                                    <option value="">WC100</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="14357.00" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="7005.00" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="12976.20" disabled>
+                            </td>
+                            <td class="text-center">34,338.20</td>
+                            <td class="text-center">1,716.91</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="form-select" name="" id="" disabled>
+                                    <option value="">WC160</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="33368.50" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="18767.50" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="" aria-describedby="" value="34711.00" disabled>
+                            </td>
+                            <td class="text-center">86,847.00</td>
+                            <td class="text-center">1,736.94</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td><b>Total</b></td>
+                            <td class="text-center">47,725.50</td>
+                            <td class="text-center">25,772.50</td>
+                            <td class="text-center">47,687.2</td>
+                            <td class="text-center">12,1185.20</td>
+                            <td class="text-center">3,453.85</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <p><b>Authorized Representative</b></p>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="" aria-describedby="" value="MELITA A. ROARING">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Position</label>
+                        <input type="text" class="form-control" id="" aria-describedby="" value="JUNIOR ACCOUNTING MANAGER">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">TIN</label>
+                        <input type="text" class="form-control" id="" aria-describedby="" value="205-858-687-00000">
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label class="form-label">Upload Signature</label>
+                    <div id="uploader">
+                        <div class="lead">
+                            <i class="uil uil-cloud-upload"></i>
+                        </div>
+                        <a class="btn btn-primary" href="">Browse File</a>
+                        <p>or drop files to upload</p>
+                    </div>
+                    <p class="form-text">Max file size 5MB</p>
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="d-flex justify-content-between">
+                {% if page.secondary-button %}
+                    <a class="btn btn-link btn-lg" href="">{{ page.secondary-button }}</a>
+                {% endif %}
+                {% if page.primary-button %}
+                    <a class="btn btn-primary btn-lg" href="">{{ page.primary-button }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Preview &amp; Submit
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-fullscreen-xxl-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row align-items-center w-100">
+                    <div class="col-auto">
+                        <a class="btn btn-outline-dark" href=""><i class="uil uil-angle-left-b"></i></a>
+                    </div>
+                    <div class="col">
+                        <h5 class="modal-title" id="exampleModalLabel">Preview &amp; Submit</h5>
+                    </div>
+                    <div class="col-auto">
+                        <a class="btn btn-link" href="">Download Form</a>
+                        <a class="btn btn-primary" href="">Submit Form </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="container text-center">
+                        <img src="https://www.full-suite.com/wp-content/uploads/2016/09/BIR-Form-2307.jpg" alt="">
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#declarations">
+    Declarations
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="declarations" tabindex="-1" aria-labelledby="declarations-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-header">
+
+                <h5 class="modal-title">Declarations</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Terms and Conditions</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">SM Supermalls Data & Privacy Notice</label>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">I have read and agree to all of the above.</label>
+                    </div>
+
+                </div>
+                <a class="btn btn-primary" href="">I Agree </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#disapprove-form">
+    Reference Number
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="disapprove-form" tabindex="-1" aria-labelledby="disapprove-form-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-light">
+                <div class="d-grid gap-4 w-100">
+                    <div class="text-end">
+                        <button type="button" class="btn btn-link link-light ml-0" data-bs-dismiss="modal" aria-label="Close"><i class="uil uil-times"></i></button>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="modal-title" id="exampleModalLabel">Your form has been successfully submitted</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+
+                    <div class="mb-3 border">
+                        <p class="mb-0">Reference Number</p>
+                        <p class="mb-0 lead">#1234567890</p>
+                    </div>
+
+                    <a class="btn btn-primary" href="">OK, Go back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

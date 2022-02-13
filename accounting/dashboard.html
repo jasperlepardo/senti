@@ -1,0 +1,770 @@
+---
+layout: default
+layout-type: #container | container-fluid
+custom-stylesheet: 
+transition: fade
+
+navbar: true
+
+header: true
+
+---
+
+<div class="heading pt-4 pb-3">
+    <div class="row">
+        <div class="col">
+            <h1>Welcome!</h1>
+        </diV>
+        <div class="col text-end">
+            <a class="btn btn-primary ml-auto" href=""  data-bs-toggle="modal" data-bs-target="#upload-form">Upload Form</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-grid gap-4 mb-5">
+   
+    <div class="card">
+        <div class="card-body">
+
+            <div class="d-flex mb-3">
+                <div class="border d-inline-block p-1 rounded-pill ms-auto">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Open (28)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Assign to Me (28)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+                    <thead class="bg-white" style="position: sticky;top: 0" >
+                        <tr>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Reference Number</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Payor Name</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-3 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <a href="">Select All</a>
+                                            <a href="">Clear</a>
+                                        </form>
+                                        <div class="overflow-auto" style="max-height: 162px;">
+                                                <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Barbers</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Cafe</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Fix Salon</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Bench Skin Expert</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Faceshop</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Human</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Kashieca</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Miasen</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Pablo</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Patchi</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">PCX</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">St. Marc Cafe</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Location</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-3 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <a href="">Select All</a>
+                                            <a href="">Clear</a>
+                                        </form>
+                                        <div class="overflow-auto" style="max-height: 162px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY MANILA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN JOSE DEL MONTE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY FAIRVIEW</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SAVEMORE MARKET NAGTAHAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BF PARANAQUE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BICUTAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY NORTH EDSA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CENTER PASIG</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY VALENZUELA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SOUTHMALL LAS PINAS</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM AURA PREMIER</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Accounting</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-3 py-3">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                            <a href="">Select All</a>
+                                            <a href="">Clear</a>
+                                        </form>
+                                        <div class="overflow-auto" style="max-height: 162px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY MANILA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN LAZARO</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY SAN JOSE DEL MONTE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY FAIRVIEW</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SAVEMORE MARKET NAGTAHAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BF PARANAQUE</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY BICUTAN</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY NORTH EDSA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CENTER PASIG</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM CITY VALENZUELA</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM SOUTHMALL LAS PINAS</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">SM AURA PREMIER</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Updated</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="mb-3">
+                                                <input type="date" class="form-control" placeholder="Search">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Wittholding Tax</a>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="mb-3">
+                                                <input type="date" class="form-control" placeholder="Search">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Period</a>
+                                    <div class="dropdown-menu">
+                                        <div class="overflow-auto" style="max-height: 212px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q1</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q2</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q3</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Q4</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-boundary="viewport" aria-expanded="false"><i class="me-1 uil uil-sort"></i>Status</a>
+                                    <div class="dropdown-menu">
+                                        <div class="overflow-auto" style="max-height: 272px;">
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Submitted</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Returned</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Cancelled</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Resubmitted</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Disapproved</label>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Approved</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-3 py-3">
+                                            <button type="submit" class="btn btn-primary">Ok</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="overflow-auto">
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Submitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Returned</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Cancelled</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-warning">Resubmitted</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-danger">Disapproved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ site.baseurl }}/view-form.html">123456789</a></td>
+                            <td>Bench</td>
+                            <td>SM Aura Premier</td>
+                            <td>Jerele Salvador</td>
+                            <td>October 3, 2021</td>
+                            <td>10,000.00</td>
+                            <td>Q3 2021</td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col align-self-center">
+                    Records: 1 - 10 / 100
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-link" href=""><i class="uil uil-angle-left-b"></i></a>
+                        Page <input type="text" class="form-control mx-2" style="width: 96px;" id="" placeholder="1"> of 50
+                        <a class="btn btn-link" href=""><i class="uil uil-angle-right-b"></i></a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <select class="form-select mx-2" style="width: 96px;" name="" id="">
+                            <option value="">10</option>
+                        </select>
+                        per page
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row mb-3">
+                <div class="col">
+                    <h6 class="card-title mb-0">Reports</h6>
+                </diV>
+                <div class="col-auto">
+                    <a class="btn btn-primary ml-auto" href="" data-bs-toggle="modal" data-bs-target="#cewt-report">Generate CEWT Report</a>
+                    <a class="btn btn-primary ml-auto" href="" data-bs-toggle="modal" data-bs-target="#sawt-report">Generate SAWT Report</a>
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>ID</a></th>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>SM Business</a></th>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>Period Covered</a></th>
+                        <th><a href=""><i class="me-1 uil uil-sort"></i>Generated On</a></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0030587890000033120211702Q</td>
+                        <td>SM Mall - SM Aura Premier</td>
+                        <td>10/2021</td>
+                        <td>October 3, 2021</td>
+                        <td>
+                            <a class="btn btn-link" href=""><i class="uil uil-cloud-download me-2"></i>SAWT Report</a>
+                            <a class="btn btn-link" href=""><i class="uil uil-cloud-download me-2"></i>Compiled Forms</a>
+                        </td>
+                        <tr>
+                            <td>CEWT2000SMOA03312021</td>
+                            <td>SM Mall - SM Aura Premier</td>
+                            <td>10/2021</td>
+                            <td>October 3, 2021</td>
+                            <td>
+                                <a class="btn btn-link" href=""><i class="uil uil-cloud-download me-2"></i>CEWT Report</a>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="upload-form">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Upload Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="uploader">
+                    <div class="lead">
+                        <i class="uil uil-cloud-upload"></i>
+                    </div>
+                    <a class="btn btn-primary" href="">Browse File</a>
+                    <p>or drop files to upload</p>
+                </div>
+
+
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th><a href=""><i class="me-1 uil uil-sort"></i>Filename</a></th>
+                            <th><a href=""><i class="me-1 uil uil-sort"></i>Status</a></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[2307 Filename.jpg]</td>
+                            <td>[Error Message]</td>
+                            <td>
+                                <a class="link-danger" href=""><i class="uil uil-times-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[2307 Filename.jpg]</td>
+                            <td>[Error Message]</td>
+                            <td>
+                                <a class="link-danger" href=""><i class="uil uil-times-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[2307 Filename.jpg]</td>
+                            <td>[Error Message]</td>
+                            <td>
+                                <a class="link-danger" href=""><i class="uil uil-times-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[2307 Filename.jpg]</td>
+                            <td>[Error Message]</td>
+                            <td>
+                                <a class="link-danger" href=""><i class="uil uil-times-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[2307 Filename.jpg]</td>
+                            <td>[Error Message]</td>
+                            <td>
+                                <a class="link-danger" href=""><i class="uil uil-times-circle"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="cewt-report">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Generate CEWT Report</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="mb-3">
+                    <label class="form-label">Period</label>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline mb-3">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Single Form</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-3">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Consolidated Form</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label class="form-label">Submitted Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label class="form-label">Approved Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                </div>
+
+
+
+
+    
+                <div class="row">
+
+                    <div class="col mb-3">
+                        <label class="form-label">Company Name</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">Select Company Name</option>
+                        </select>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">Location</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">Select Location</option>
+                        </select>
+                    </div>
+                </div>
+                <a class="btn btn-primary" href="">Generate CEWT</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="sawt-report">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Generate SAWT Report</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Period</label>
+
+                        <div class="row g-2">
+                            <div class="col">
+                                <select class="form-select" name="" id="">
+                                    <option value="">Q1</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select" name="" id="">
+                                    <option value="">2021</option>
+                                </select>        
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">Submitted Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">Approved Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                </div>
+
+
+
+
+    
+                <div class="row">
+
+                    <div class="col mb-3">
+                        <label class="form-label">Company Name</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">Select Company Name</option>
+                        </select>
+                    </div>
+                    <div class="col mb-3">
+                        <label class="form-label">Location</label>
+                        <select class="form-select" name="" id="">
+                            <option value="">Select Location</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <a class="btn btn-primary" href="">Generate SAWT</a>
+
+            </div>
+        </div>
+    </div>
+</div>
